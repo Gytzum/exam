@@ -1,64 +1,51 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Laravel CRUD APPLICATION
+![CSS-CODE](https://img.shields.io/badge/CSS-CODE-orange)
+![HTML-CODE](https://img.shields.io/badge/HTML-CODE-blue)
+![PHP-CODE](https://img.shields.io/badge/PHP-CODE-9cf)
+![MYSQL-CODE](https://img.shields.io/badge/MYSQL-CODE-yellow)
+![Laracel-CODE](https://img.shields.io/badge/LARAVEL-CODE-blueviolet)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## This is my final exam
 
-## About Laravel
+## CRUD APP features
+* See the books and authors on the data table
+* Add new records
+* Delete records 
+* Edit button that allows change data
+* Routing between valid pages
+* Exporting records as .pdf
+* Log in and Sign up functionality
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Requirements For Installation
+* Integrated development environment (IDE) application
+* MySQL WorkBench
+* AMPPS or XAMMP
+* Composer 
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Installation
+* Clone repository to AMPPS or XAMPPS root folder 
+* Create a new Database
+* Open your (IDE) application and open cloned application
+* Rename .env.example to .env and fill info about your database name, username, password etc.
+* Install Composer if you don't have one [Click here to install](https://getcomposer.org/doc/00-intro.md#installation-windows)
+* Find your Composter with code below: 
+``` 
+php ../composer.phar require laravel/ui
+```
+* Set application key(generate) if doesn't work use code below(clear) :
+```
+php artisan key:generate
+php artisan config:clear
+```
+* Copy this code to terminal and create scheme tables and insert admin user into database
+```
+php artisan migrate:refresh --seed  
+```
+* Write this line into terminal to start using app
+```
+php artisan serve
+```
+* After this command line execution you should see your localhost server with port given ctrl + left mouse click to open.
+## Author
+Gytautas [Github](https://github.com/Gytzum) , [LinkedIn](https://www.linkedin.com/in/gytautas-zumaras-4ab552210/)
