@@ -38,10 +38,6 @@ php ../composer.phar require laravel/ui
 php artisan key:generate
 php artisan config:clear
 ```
-* Copy this code to terminal and create scheme tables and insert admin user into database
-```
-php artisan migrate:refresh --seed  
-```
 * Write this line into terminal to start using app
 ```
 php artisan serve
